@@ -3,14 +3,14 @@ import Card from "react-bootstrap/Card";
 
 export const CustomCard = ({
   _id,
-  thumbnail,
+  imageURL,
   title,
   author,
   publishedYear,
 }) => {
   return (
     <Card style={{ width: "18rem" }}>
-      <Card.Img variant="top" src={thumbnail} />
+      <Card.Img variant="top" src={imageURL} />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <hr />

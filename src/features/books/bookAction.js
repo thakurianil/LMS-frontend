@@ -8,10 +8,10 @@ import {
 import { setBooks, setSelectedBook } from "./bookSlice";
 
 export const getAllBooksAction = (isPrivate) => async (dispatch) => {
-  // const { status, books } = await fetchBooks(isPrivate);
-  // if (status) {
-  //   dispatch(setBooks(books));
-  // }
+  const books = await fetchBooks(isPrivate);
+  console.log(books);
+  dispatch(setBooks(books));
+
 };
 
 export const postNewBookAction = (obj) => async (disptch) => {

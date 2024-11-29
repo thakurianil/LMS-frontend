@@ -6,7 +6,7 @@ import bookReducer from "../features/books/bookSlice";
 
 export default configureStore({
   reducer: {
-    // userInfo: userReducer,
+    userInfo: userReducer,
     bookInfo: bookReducer,
     // burrowInfo: burrowReducer,
     // reviewInfo: reviewReducer,
